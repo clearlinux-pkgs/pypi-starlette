@@ -6,10 +6,10 @@
 # autospec commit: 5424026
 #
 Name     : pypi-starlette
-Version  : 0.42.0
-Release  : 17
-URL      : https://files.pythonhosted.org/packages/3e/ae/0c98794b248370ce30f71018d0f39889f1d90c73a631e68e2f47e5efda2f/starlette-0.42.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/3e/ae/0c98794b248370ce30f71018d0f39889f1d90c73a631e68e2f47e5efda2f/starlette-0.42.0.tar.gz
+Version  : 0.43.0
+Release  : 18
+URL      : https://files.pythonhosted.org/packages/af/36/3a623a561dc8585a90973c8c0ed87511beebbe658c7e8f883fdab7ba55e1/starlette-0.43.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/af/36/3a623a561dc8585a90973c8c0ed87511beebbe658c7e8f883fdab7ba55e1/starlette-0.43.0.tar.gz
 Summary  : The little ASGI library that shines.
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -24,10 +24,11 @@ BuildRequires : pypi(hatchling)
 
 %description
 <p align="center">
-<a href="https://www.starlette.io/"><img width="420px" src="https://raw.githubusercontent.com/encode/starlette/master/docs/img/starlette.svg" alt='starlette'></a>
-</p>
-<p align="center">
-<em>✨ The little ASGI framework that shines. ✨</em>
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/encode/starlette/master/docs/img/starlette_dark.svg" width="420px">
+<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/encode/starlette/master/docs/img/starlette.svg" width="420px">
+<img alt="starlette-logo" src="https://raw.githubusercontent.com/encode/starlette/master/docs/img/starlette_dark.svg">
+</picture>
 </p>
 
 %package license
@@ -59,15 +60,15 @@ python3 components for the pypi-starlette package.
 
 
 %prep
-%setup -q -n starlette-0.42.0
-cd %{_builddir}/starlette-0.42.0
+%setup -q -n starlette-0.43.0
+cd %{_builddir}/starlette-0.43.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1735099477
+export SOURCE_DATE_EPOCH=1735244225
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
