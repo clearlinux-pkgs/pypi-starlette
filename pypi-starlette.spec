@@ -6,10 +6,10 @@
 # autospec commit: 5424026
 #
 Name     : pypi-starlette
-Version  : 0.44.0
-Release  : 19
-URL      : https://files.pythonhosted.org/packages/8d/b4/910f693584958b687b8f9c628f8217cfef19a42b64d2de7840814937365c/starlette-0.44.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/8d/b4/910f693584958b687b8f9c628f8217cfef19a42b64d2de7840814937365c/starlette-0.44.0.tar.gz
+Version  : 0.45.0
+Release  : 20
+URL      : https://files.pythonhosted.org/packages/e9/dc/9b3204e7bdc7c2b7589b604259b32b6b1dcc28faa2f51969d4968510845d/starlette-0.45.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/e9/dc/9b3204e7bdc7c2b7589b604259b32b6b1dcc28faa2f51969d4968510845d/starlette-0.45.0.tar.gz
 Summary  : The little ASGI library that shines.
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -60,15 +60,15 @@ python3 components for the pypi-starlette package.
 
 
 %prep
-%setup -q -n starlette-0.44.0
-cd %{_builddir}/starlette-0.44.0
+%setup -q -n starlette-0.45.0
+cd %{_builddir}/starlette-0.45.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1735398780
+export SOURCE_DATE_EPOCH=1735573958
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
