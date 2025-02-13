@@ -7,7 +7,7 @@
 #
 Name     : pypi-starlette
 Version  : 0.45.3
-Release  : 23
+Release  : 24
 URL      : https://files.pythonhosted.org/packages/ff/fb/2984a686808b89a6781526129a4b51266f678b2d2b97ab2d325e56116df8/starlette-0.45.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ff/fb/2984a686808b89a6781526129a4b51266f678b2d2b97ab2d325e56116df8/starlette-0.45.3.tar.gz
 Summary  : The little ASGI library that shines.
