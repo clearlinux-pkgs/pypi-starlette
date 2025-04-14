@@ -1,5 +1,5 @@
 PKG_NAME := pypi-starlette
-URL = https://files.pythonhosted.org/packages/04/1b/52b27f2e13ceedc79a908e29eac426a63465a1a01248e5f24aa36a62aeb3/starlette-0.46.1.tar.gz
+URL = https://files.pythonhosted.org/packages/ce/20/08dfcd9c983f6a6f4a1000d934b9e6d626cff8d2eeb77a89a68eef20a2b7/starlette-0.46.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
